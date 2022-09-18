@@ -8,30 +8,31 @@
     "packages": [
         {
             "name": "mpdf/qrcode",
-            "version": "v1.0.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mpdf/qrcode.git",
-                "reference": "62817403c88758aee3f13eb53f313f64ecc5f478"
+                "reference": "0c09fce8b28707611c3febdd1ca424d40f172184"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mpdf/qrcode/zipball/62817403c88758aee3f13eb53f313f64ecc5f478",
-                "reference": "62817403c88758aee3f13eb53f313f64ecc5f478",
+                "url": "https://api.github.com/repos/mpdf/qrcode/zipball/0c09fce8b28707611c3febdd1ca424d40f172184",
+                "reference": "0c09fce8b28707611c3febdd1ca424d40f172184",
                 "shasum": ""
             },
             "require": {
-                "paragonie/random_compat": "^1.4|^2.0|9.99.99",
-                "php": "^5.6 || ^7.0"
+                "paragonie/random_compat": "^1.4|^2.0|^9.99.99",
+                "php": "^5.6 || ^7.0 || ^8.0"
             },
             "require-dev": {
                 "mockery/mockery": "^0.9.5",
-                "phpunit/phpunit": "^5.0",
                 "squizlabs/php_codesniffer": "^3.4",
-                "tracy/tracy": "^2.5"
+                "tracy/tracy": "^2.5",
+                "yoast/phpunit-polyfills": "^1.0"
             },
             "suggest": {
-                "ext-gd": "To output QR codes to PNG files"
+                "ext-gd": "To output QR codes to PNG files",
+                "ext-simplexml": "To output QR codes to SVG files"
             },
             "type": "library",
             "autoload": {
@@ -63,26 +64,32 @@
             ],
             "support": {
                 "issues": "https://github.com/mpdf/qrcode/issues",
-                "source": "https://github.com/mpdf/qrcode/tree/test"
+                "source": "https://github.com/mpdf/qrcode/tree/v1.2.0"
             },
-            "time": "2019-01-16T18:40:23+00:00"
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/mpdf",
+                    "type": "custom"
+                }
+            ],
+            "time": "2022-01-11T09:42:41+00:00"
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v9.99.99",
+            "version": "v9.99.100",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95"
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
-                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a",
                 "shasum": ""
             },
             "require": {
-                "php": "^7"
+                "php": ">= 7"
             },
             "require-dev": {
                 "phpunit/phpunit": "4.*|5.*",
@@ -115,7 +122,7 @@
                 "issues": "https://github.com/paragonie/random_compat/issues",
                 "source": "https://github.com/paragonie/random_compat"
             },
-            "time": "2018-07-02T15:55:56+00:00"
+            "time": "2020-10-15T08:29:30+00:00"
         }
     ],
     "packages-dev": [],
@@ -126,5 +133,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.3.0"
 }
